@@ -74,11 +74,6 @@ function logger:EnableSaving(bSave) end
 ---
 ---@server
 function logger:GetSaving() end
-
----Alias of `logger:GetSaving()`
----@returns boolean
----
----@server
 function logger:IsSaving() end
 
 ---Enables printing into console.
@@ -92,12 +87,6 @@ function logger:EnablePrinting(bPrint) end
 ---
 ---@shared
 function logger:GetPrinting() end
-
----Alias of `logger:GetPrinting()`
----
----@returns boolean
----
----@shared
 function logger:IsPrinting() end
 
 ---Enables debugging. Debug*() disabled by default.
@@ -111,12 +100,6 @@ function logger:EnableDebugging(bEnabled) end
 ---
 ---@shared
 function logger:GetDebugging() end
-
----Alias of `logger:GetDebugging()`
----
----@returns boolean
----
----@shared
 function logger:IsDebugging() end
 
 ---Returns logger's identifier.
