@@ -117,6 +117,13 @@ function TASK:Status() end
 function TASK:GetCreationTick() end
 function TASK:CreationTick() end
 
+---Returns `debug.getinfo()` table of task's function.
+---
+---@return table info
+---@shared
+function TASK:GetInfo() end
+function TASK:Info() end
+
 ---Returns if task's coroutine status is "running".
 ---
 ---@return boolean running
