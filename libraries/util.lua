@@ -39,3 +39,15 @@ function util.OnFirstFrame(func, priority) end
 ---
 ---@shared
 function PLAYER:GetSpawnTime() end
+
+---Returns player's coins
+---@return number coins
+---
+---@shared
+function PLAYER:GetCoins() end
+
+---Sets N coins for player
+---@param coins number
+---
+---@server
+function PLAYER:SetCoins(coins) end

@@ -2,6 +2,7 @@
 
 SERVERID = 0
 LOCALPLAYER = Player(1)
+PLAYER = setmetatable({}, {})
 
 ---Prints message to all clients.
 ---@param ... any
