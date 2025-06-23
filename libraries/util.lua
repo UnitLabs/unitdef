@@ -40,8 +40,6 @@ function util.OnFirstFrame(func, priority) end
 
 ---Returns player's spawn time (CurTime())
 ---@return number spawnTime
----@deprecated Use "hooks.Initialize:Once" instead.
----@see hooks
 ---@shared
 function PLAYER:GetSpawnTime() end
 
