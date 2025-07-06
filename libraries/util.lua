@@ -9,6 +9,7 @@ util = util or {}
 ---@see hooks
 ---@shared
 function util.OnInitialize(func, priority) end
+---@deprecated Use "hooks.Initialize:Once" instead.
 function util.OnInitialise(func, priority) end
 
 ---Calls function in the upcoming tick.
@@ -17,6 +18,7 @@ function util.OnInitialise(func, priority) end
 ---@see hooks
 ---@shared
 function util.NextTick(func) end
+---@deprecated Use "timer.Simple(0, function)" instead.
 function util.NextThink(func) end
 
 ---Calls function on `GM:InitPostEntity`.
@@ -26,7 +28,9 @@ function util.NextThink(func) end
 ---@see hooks
 ---@shared
 function util.OnInitPostEntity(func, priority) end
+---@deprecated Use "hooks.InitPostEntity:Once" instead.
 function util.OnEntityInitialize(func, priority) end
+---@deprecated Use "hooks.InitPostEntity:Once" instead.
 function util.OnEntityInitialise(func, priority) end
 
 ---Calls function on the first frame.
