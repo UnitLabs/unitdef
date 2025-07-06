@@ -1,7 +1,7 @@
 ---@meta
 
 ---Library to log any information. Saves into MariaDB and/or prints info into console.
----
+---@class signalLogger
 ---@shared
 signalLogger = {}
 
