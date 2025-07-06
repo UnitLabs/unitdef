@@ -12,6 +12,8 @@ function ChatPrint(...) end
 
 ---Returns true if module in lua/bin exists. Checks server os automaticly.
 ---@param module string
+---@deprecated
+---@see util.IsBinaryModuleInstalled
 ---
 ---@shared
 function IsValidModule(module) end
