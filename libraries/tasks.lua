@@ -5,7 +5,7 @@
 ---@shared
 tasks = {}
 
----Create tasks whick you need to call manually.
+---Create tasks which you need to call manually.
 ---```
 ---local T = tasks.New(function()
 ---	print("a")
