@@ -281,3 +281,11 @@ function TASK:OnStart(...) end
 ---@param ... any
 ---@shared
 function TASK:OnEnd(...) end
+
+---Called on error.
+---Arguments are passed from `TASK:Yield()`.
+---
+---@param errorstr string
+---@param ... any
+---@shared
+function TASK:OnEnd(errorstr, ...) end
