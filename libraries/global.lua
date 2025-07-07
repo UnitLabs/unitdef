@@ -44,3 +44,54 @@ hook = hook or {}
 ---
 ---@shared
 function hook.Add(eventName, identifier, func, priority) end
+
+
+---Sets a permanent name, which is applied on every server join.
+---An alias exists: `SetPermanentNick`.
+---@param strName string
+---@param bSave boolean?
+---@return boolean success
+function SetPermanentName(strName, bSave) end
+
+---Gets a permanent name.
+---An alias exists: `GetPermanentNick`.
+---@return string name
+function GetPermanentName() end
+
+---Adds status to the list.
+---@param status string Status text.
+---@param time integer How much time the status will stay under nametag.
+---@param save boolean? Should we save the list? Calls `SaveStatusList()` internally.
+function AddStatus(status, time, save) end
+
+---Loads the status list.
+---The mutable list is available from `GetStatusList()`.
+function LoadStatusList() end
+
+---Saves the list.
+function SaveStatusList() end
+
+---Returns mutable status list.
+---@return { text: string, delay: integer }[]
+function GetStatusList() end
+
+---Returns status at position.
+---Similar to `GetStatusList()[n]`.
+---@param n integer
+---@return { text: string, delay: integer }
+function GetStatus(n) end
+
+---Sets status at position.
+---Similar to `SetStatusText(GetStatus(n).text)`
+---@param n integer
+function SetStatus(n) end
+
+---Sets text as status.
+---@param text string
+function SetStatusText(text) end
+
+---Enables auto-status.
+function EnableAutoStatus() end
+
+---Disables auto-status.
+function DisableAutoStatus() end
